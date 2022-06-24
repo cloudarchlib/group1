@@ -1,5 +1,7 @@
 package com.bijay.second.app.data;
 
+import java.util.Objects;
+
 public class Patient {
     public String name;
     public int age;
@@ -48,4 +50,5 @@ public class Patient {
     public void setAge(int age) {
         this.age = age;
     }
+
 }
