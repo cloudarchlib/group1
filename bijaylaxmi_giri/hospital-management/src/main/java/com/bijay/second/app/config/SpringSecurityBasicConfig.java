@@ -13,9 +13,9 @@ public class SpringSecurityBasicConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/post/**").hasAnyRole("ADMIN","Doctor")
-                .antMatchers(HttpMethod.PUT, "/put/**").hasAnyRole("ADMIN","Patient")
-                .antMatchers(HttpMethod.GET, "/get/**").hasAnyRole("Patient").and().csrf().disable().headers()
+                .antMatchers(HttpMethod.POST, "/post/patientdetails").hasAnyRole("ADMIN","Doctor")
+                .antMatchers(HttpMethod.PUT, "/put/{name}").hasAnyRole("ADMIN","Patient")
+                .antMatchers(HttpMethod.GET, "/get/patient/**").hasAnyRole("Patient").and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 

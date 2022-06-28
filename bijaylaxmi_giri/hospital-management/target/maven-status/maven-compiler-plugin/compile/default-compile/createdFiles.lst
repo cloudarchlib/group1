@@ -1,6 +1,6 @@
 com\bijay\second\app\data\Patient.class
-com\bijay\second\app\controller\HospitalController.class
 com\bijay\second\app\data\Hospital.class
 com\bijay\second\app\config\SpringSecurityBasicConfig.class
-com\bijay\second\app\controller\PatientController.class
 com\bijay\second\app\App.class
+com\bijay\second\app\controller\hospitalcontroller.class
+com\bijay\second\app\controller\patientcontroller.class
